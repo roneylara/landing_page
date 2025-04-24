@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
@@ -12,6 +13,7 @@
 
     <link rel="stylesheet" href="style.css" />
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Clínica médica</title>
 </head>
 <body>
@@ -20,7 +22,7 @@
         <header>
 
             <nav class="header-content container">
-                <div class="header-icons-container">
+                <div class="header-icons-container" data-aos="fade-down">
                     <div class="header-icons">
                         <a href="#">
                             <i class="fa-brands fa-instagram fa-2x"></i>
@@ -33,22 +35,25 @@
                         </a>
                     </div>
             
-                    <div class="header-logo">
+                    <div class="header-logo" data-aos="fade-up" dat-aos-delay="300">
                         <img 
+                            data-aos="flip-up"
+                            data-aos-delay="300"
+                            data-aos-duration="1500"
                             src="assets/logo.png"
                             alt="Logo da Clínica"
                         />
                     </div>
                 </div>
             
-                <div>
+                <div data-aos="fade-down">
                     <a class="header-button" href="#">
                         Agendar horário
                     </a>
                 </div>
             </nav>
 
-            <main class="hero container">
+            <main class="hero container" data-aos="fade-up" data-aos-delay="400">
                 <h1>CUIDAMOS DE VOCÊ, E DA SUA SAÚDE.</h1>
                 <p>Horário de funcionamento: 09:00 às 19:00</p>
                 <a href="#" class="button-contact" target="_blank">
@@ -66,20 +71,23 @@
     <!-- ABOUT -->
     <section class="about">
         <div class="container about-content">
-            <div>
+            <div data-aos="zomm-in" data-aos-delay="400">
                 <img 
                     src="assets/consulta.png"
                     alt="Imagem sobre a consulta clínica"
                 />
             </div>
 
-            <div class="about-description">
-                    <h2>Sobre</h2>
-                    <p>Oferece serviços especializados em diversas áreas da medicina, com profissionais capacitados para consultas, diagnósticos, tratamentos e acompanhamentos. Com estrutura adequada e atendimento humanizado, a clínica busca proporcionar conforto, segurança e eficiência no cuidado com cada paciente.</p>
-                    <p>Horário de funcionamento: <strong>09:00</strong> ás <strong>18:00</strong></p>
-                </div>
-
+            <div 
+                class="about-description"
+                data-aos="zoom-out-left" data-aos-delay="250"
+            >
+                <h2>Sobre</h2>
+                <p>Oferece serviços especializados em diversas áreas da medicina, com profissionais capacitados para consultas, diagnósticos, tratamentos e acompanhamentos. Com estrutura adequada e atendimento humanizado, a clínica busca proporcionar conforto, segurança e eficiência no cuidado com cada paciente.</p>
+                <p>Horário de funcionamento: <strong>09:00</strong> ás <strong>18:00</strong></p>
             </div>
+
+        </div>
     </section> 
 
         <!--SERVICES-->
@@ -91,7 +99,7 @@
             </div>
 
         <section class="servicos">
-            <div class="especialidade">
+            <div class="especialidade" data-aos="fade-up" data-aos-delay="140">
                 <img
                     src="assets/cardiologista.png"
                     alt="Cardiologista"
@@ -101,7 +109,7 @@
                 </div>
             </div>       
             
-            <div class="especialidade">
+            <div class="especialidade" data-aos="fade-down" data-aos-delay="250">
                 <img
                     src="assets/neurologista.png"
                     alt="Neurologista"
@@ -111,7 +119,7 @@
                 </div>
             </div>       
                        
-            <div class="especialidade">
+            <div class="especialidade" data-aos="fade-up" data-aos-delay="400">
                 <img
                     src="assets/fisioterapia.png"
                     alt="Fisioterapia"
@@ -214,6 +222,6 @@
 
 
 
-
+    <script src="script.js"></script>
 </body>
 </html>
